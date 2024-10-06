@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+  *{
+   padding:0;
+   margin:0;
+  }
+  li{
+    display: inline;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Numans');
+  html,body{
+  height: 100%;
+  font-family: 'Numans', sans-serif;
+  }
+  .container
+  {
+    width:55%;
+    position: absolute;
+    height:70%;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+  .container .image
+  {
+    width:100%;
+    height:100%;
+    display:none;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    
+  }
+  .text
+  {
+    color:#00246B;
+    width:40%;
+    height:455px;
+    margin-left: 57%;
+    margin-top: 40px;
+  }
+  .main
+  {
+    display:flex
+  }
+  .text > h2{
+    margin-top: 15%;
+    margin-left: 20px;
+  }
+  .text>h4{
+    margin-left: 22%;
+  }
+  #b1{
+    margin-top: 13%;
+    border-radius: 10px;
+    padding:12px;
+    margin-left: 30%;
+  }
+  #b1:hover{
+    color: royalblue;
+    background-color:#FFFF;
+    border-color: royalblue;
+  }
+  img{
+    width:100%;
+    height:100%;
+  }
+  .quote{
+    margin-left: 3%;
+    margin-top:9%;
+    width:500px;
+  }
+  
+
+</style>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">KSREI</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="{{url_for('admin')}}">Home</a></li>
+      <li><a href="{{url_for('about')}}">About Us</a></li>
+      <li><a href="{{url_for('cutoff')}}">Courses</a></li>
+      <li><a href="{{url_for('signout')}}">Student login</a></li>
+      <li><a href="{{url_for('faculty')}}">Faculty login</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="main">
+<div class="container">
+  <div class="image">
+    <img src="https://ksrei.org/wp-content/uploads/2016/07/technology.jpg">
+  </div>
+    <div class="image">
+      <img src="https://th.bing.com/th/id/R.42267a73a4c1717551a4207cd938943b?rik=%2fXTaAD1SE96MKw&riu=http%3a%2f%2fksrei.org%2fwp-content%2fuploads%2f2020%2f04%2fksrit.jpg&ehk=%2fcsHwLOKAfNLml89PKLkpL5wpdXP9fCVp6AxkDotbHQ%3d&risl=&pid=ImgRaw&r=0">
+    </div>
+    <div class="image">
+      <img src="https://campushunt.in/photogallery/k-s-r-college-of-engineering-1519122354-2.jpg">
+    </div>
+    <div class="image">
+      <img src="https://1.bp.blogspot.com/-G6yJ4yadPOQ/YIOz-PKttII/AAAAAAAABFs/ncx3KcSKAwkvu1kht0883G7vqbu7-LhOwCLcBGAsYHQ/s650/1.jpg" >
+    </div>
+    <div class="image">
+      <img src="https://www.pixelstalk.net/wp-content/uploads/2016/10/College-Backgrounds.jpg" >
+    </div>
+    
+</div>
+<div class="text">
+  <h2 style="line-height: 1.5;"><i>
+    WELOCME TO KSR EDUCATIONAL INSTITUTIONS
+    </i>
+  </h2>
+     
+      <h4 style="line-height: 1.5; margin-left: 4%;margin-top: 4%;">"where possibilities flourish and dreams take flight. Here, we nurture minds, foster innovation, and shape futures."</h4>
+      <button id="b1" onclick="location.href='{{url_for('register')}}'">Application open</button>
+</div>
+</div>
+</body>
+<script>
+  let slideindex=0;
+  showslides();
+  function showslides()
+  {
+    let i;
+    let slides=document.getElementsByClassName("image");
+    for(i=0;i<slides.length;i++)
+    {
+      slides[i].style.display="none";
+    }
+    slideindex++;
+    if(slideindex>slides.length){slideindex=1}
+    slides[slideindex-1].style.display="block";
+    setTimeout(showslides,3000);
+  }
+
+  </script>
+</html>

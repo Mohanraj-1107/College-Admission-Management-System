@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Courses</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Numans');
+        html,body{
+        height: 100%;
+         font-family: 'Numans', sans-serif;
+		 font-size: 15px;
+  }
+      body{
+      background-image: url("https://wallpaperaccess.com/full/1209471.jpg");
+	}
+	.t1 > h3
+	{
+		text-align: center;
+		color:gainsboro;
+	}
+	table{
+		margin-left: 12%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		padding:50px;
+		padding-left:20px;
+		padding-right: 20px;
+		border:2px solid white;
+		color:white;
+	}
+	th,td{
+		padding-left:80px;
+		padding-top: 20px;
+	}
+	.footer{
+		width:100%;
+		height:5%;
+	}
+	button{
+		color:royalblue;
+		background-color:white;
+		padding:4px;
+		padding-left: 12px;
+		padding-right:12px;
+		border-radius:7px;
+		font-family:'Numans', sans-serif;
+		outline:none;
+		margin-right: 20px;
+		margin-bottom: 15px;
+		border-color: transparent;
+		font-size: small;
+	}
+	button:hover{
+		color:white;
+		background-color: royalblue;
+	}
+	#textpart
+	{
+		margin: 5%;
+	}
+	.modal-dialog
+	{
+		width: 90%;
+		height: 100%;
+	}
+</style>
+</head>
+
+<body>
+	<div class="t1">
+	<h3>UG COURSES</h3>
+   <table>
+	<tr>
+		<th>COURSE NAME</th>
+		<th>PLACEMENT PERCENT</th>
+		<th>CUTOFF</th>
+	</tr>
+	<tr>
+		<td>B.E MECHANICAL ENGINEERING</td>
+		<td>90%</td>
+		<td>145</td>
+		<td><button data-toggle="modal" data-target="#Modal" onclick="show(event)">Details</button></td>
+	</tr>
+	<tr>
+		<td>B.E ELECTRICAL ENGINEERING</td>
+		<td>92%</td>
+		<td>150</td>
+		<td><button data-toggle="modal" data-target="#Modal" onclick="showelec(event)">Details</button></td>
+	</tr>
+	<tr>
+		<td>B.E ELECTRONICS & COMMINCATION ENGINEERING</td>
+		<td>95%</td>
+		<td>155</td>
+		<td><button data-toggle="modal" data-target="#Modal" onclick="showece(event)">Details</button></td>
+	</tr>
+	<tr>
+		<td>B.TECH INFORMATION TECHNOLOGY</td>
+		<td>93%</td>
+		<td>170</td>
+		<td><button data-toggle="modal" data-target="#Modal" onclick="showit(event)">Details</button></td>
+	</tr>
+	<tr>
+		<td>B.E COMPUTER SCIENCE ENGINEERING</td>
+		<td>97%</td>
+		<td>175</td>
+		<td><button data-toggle="modal" data-target="#Modal" onclick="showcse(event)">Details</button></td>
+	</tr>
+	<tr>
+		<td>B.E CIVIL ENGINEERING</td>
+		<td>98%</td>
+		<td>160</td>
+		<td><button data-toggle="modal" data-target="#Modal" onclick="showcivil(event)">Details</button></td>
+	</tr>
+   </table>
+   <h3>PG COURSES</h3>
+<table>
+	<tr>
+	<th>COURSE NAME</th>
+	<th>PLACEMENT PERCENT</th>
+	<th>CUTOFF</th>
+	</tr>
+	<tr>
+		<td>M.E ENERGY ENGINEERING</td>
+		<td>97%</td>
+		<td>175</td>
+		<td><button data-toggle="modal" data-target="#Modal" onclick="showee(event)">Details</button></td>
+	</tr>
+	<tr>
+		<td>M.E CIVIL ENGINEERING</td>
+		<td>96%</td>
+		<td>180</td>
+		<td><button data-toggle="modal" data-target="#Modal" onclick="showmecivil(event)">Details</button></td>
+	</tr>
+	<tr>
+		<td>M.E COMPUTER SCIENCE AND ENGINEERING</td>
+		<td>92%</td>
+		<td>185</td>
+		<td><button  data-toggle="modal" data-target="#Modal" onclick="showmecse(event)" >Details</button></td>
+	</tr>
+	<tr>
+		<td>MBA</td>
+		<td>98%</td>
+		<td>165</td>
+		<td><button data-toggle="modal" data-target="#Modal" onclick="showmba(event)">Details</button></td>
+	</tr>
+</table>
+</div>
+<div class="footer">
+
+</div>
+
+<div class="Details" >
+   <div class="mecha" style="display:none;">
+	<p id="mech">
+		<b>Introduction:</b><br>
+		Mechanical Engineering is a versatile and dynamic field that encompasses the design, analysis, and manufacture of mechanical systems and devices. From developing renewable energy solutions to designing advanced transportation systems, mechanical engineers play a vital role in driving innovation and progress in society.
+		<br>
+		<b>What You'll Learn:</b><br>
+		In our Mechanical Engineering program, students gain a comprehensive understanding of fundamental principles in mathematics, physics, and materials science, which form the basis for advanced coursework and hands-on experiences. Through a combination of theoretical studies, laboratory experiments, and design projects, students learn to apply engineering principles to solve real-world problems.
+		<br>
+		<b>Core Areas of Study:</b><br>
+		
+		Mechanics and Materials: Explore the behavior of materials under various conditions and learn to design structures and components that withstand mechanical forces.
+		Thermodynamics and Heat Transfer: Study the principles of energy conversion and heat transfer, crucial for designing efficient heating, ventilation, and cooling systems.
+		<br>
+		Fluid Mechanics: Understand the behavior of fluids and develop expertise in designing pumps, turbines, and other fluid systems.
+		<br>
+		Manufacturing Processes: Learn about different manufacturing techniques, including machining, casting, and additive manufacturing, and their applications in industry.
+		<br>
+		Control Systems and Robotics: Gain skills in designing and programming robotic systems for automation and control applications.
+		<br>
+		Renewable Energy and Sustainable Design: Investigate alternative energy sources and develop sustainable solutions for environmental challenges.
+		<br>
+		<b>Career Opportunities:</b><br>
+		With a degree in Mechanical Engineering, graduates are well-prepared for diverse career paths in industries such as:
+		<br>
+		1.Aerospace and defense<br>
+		2.Automotive and transportation<br>
+		3.Energy and utilities<br>
+		4.Manufacturing and robotics<br>
+		5.Biomedical engineering<br>
+		6.HVAC (heating, ventilation, and air conditioning)<br>
+		7.Renewable energy development<br>
+		8.Consulting and research<br>
+</p>
+<p id="civil" > 
+	<b>Introduction:</b><br>
+	Welcome to the Civil Engineering department.Civil Engineering is a dynamic field that plays a crucial role in designing, constructing, and maintaining the built environment. At our department, we're dedicated to educating future engineers who will shape the world through sustainable and resilient infrastructure solutions.
+	<br>
+	<b>What You'll Learn:</b><br>
+	In our Civil Engineering program, students gain a comprehensive understanding of structural engineering, transportation systems, environmental engineering, and construction management. Through hands-on projects, fieldwork, and interdisciplinary coursework, students develop the skills and knowledge needed to tackle the complex challenges facing the civil engineering profession.
+	<br>
+	<b>Core Areas of Study:</b><br>
+	
+	Structural Engineering: Explore the principles of structural analysis and design, learning to create safe and efficient structures such as buildings, bridges, and dams.
+	<br>
+	Transportation Engineering: Study the planning, design, and operation of transportation systems, including highways, railways, airports, and urban transit systems.
+	<br>
+	Environmental Engineering: Learn about water and wastewater treatment, air pollution control, solid waste management, and sustainable infrastructure practices to protect public health and the environment.
+	<br>
+	Geotechnical Engineering: Understand the behavior of soils and rocks, and learn to design foundations, retaining structures, and earthworks for infrastructure projects.
+	<br>
+	Construction Engineering and Management: Gain insights into project planning, scheduling, cost estimation, and construction methods, essential for delivering projects on time and within budget.
+	<br>
+	Sustainable Infrastructure: Explore innovative approaches to sustainable design and construction, including green building technologies, renewable energy integration, and resilient infrastructure planning.
+	<br>
+	<b>Career Opportunities:</b><br>
+	A degree in Civil Engineering opens doors to a wide range of career opportunities, including:
+	<br>
+	1.Structural engineering and design<br>
+	2.Transportation planning and engineering<br>
+	3.Environmental consulting and remediation<br>
+	4.Construction management and project engineering<br>
+	5.Geotechnical engineering and foundation design<br>
+	6.Urban planning and development<br>
+	7.Water resources engineering and management<br>
+	8.Sustainable infrastructure development<br>
+<p id="elect" >
+	<b>Introduction:</b><br>
+	Electrical Engineering is a dynamic and ever-evolving field at the forefront of technological advancement. It encompasses the study and application of electricity, electronics, and electromagnetism. From designing circuits for renewable energy systems to developing cutting-edge electronic devices, electrical engineers play a crucial role in shaping the modern world.
+	<br>
+
+	<b>What You'll Learn:</b><br>
+	In our Electrical Engineering program, students gain a deep understanding of fundamental principles in mathematics, physics, and computer science, which form the foundation for advanced coursework. Through hands-on projects, laboratory experiments, and theoretical studies, students learn to analyze, design, and optimize electrical systems and devices.
+	<br>
+
+	<b>Core Areas of Study:</b><br>
+	
+	Circuits and Electronics: Explore the behavior of electrical circuits and components, including analog and digital systems.
+	<br>
+	Electromagnetics: Study the interaction between electricity and magnetism, crucial for designing motors, antennas, and communication systems.
+	<br>
+	Power Systems: Learn about generating, transmitting, and distributing electrical power efficiently and sustainably.
+	<br>
+	Control Systems: Understand how to regulate and automate processes using feedback mechanisms and control theory.
+	<br>
+	Signal Processing: Analyze and manipulate signals, vital for applications such as telecommunications, audio processing, and medical imaging.
+	<br>
+	Renewable Energy: Investigate alternative energy sources like solar, wind, and hydroelectric power, addressing the global demand for sustainable solutions.
+	<br>
+
+	<b>Career Opportunities:</b>
+	<br>
+	With a degree in Electrical Engineering, graduates are well-equipped for diverse career paths in various industries, including:
+	<br>
+	1.Electronics and semiconductor manufacturing<br>
+	2.Power generation and distribution<br>
+	3.Telecommunications and networking<br>
+	4.Aerospace and defense<br>
+	5.Automotive and transportation<br>
+	6.Renewable energy development<br>
+	7.Biomedical engineering<br>
+	8.Robotics and automation<br>
+</p>
+<p id="ece" >
+	<b>Introduction:</b><br>
+	Electrical and Computer Engineering (ECE) is a dynamic and interdisciplinary field that integrates principles from electrical engineering and computer science to drive technological innovation. From designing high-performance microprocessors to developing advanced communication systems, ECE professionals are at the forefront of shaping the digital age.
+	<br>
+
+	<b>What You'll Learn:</b><br>
+	In our Electrical and Computer Engineering program, students gain a comprehensive understanding of both hardware and software systems, preparing them for a wide range of career opportunities. Through a blend of theoretical coursework, hands-on projects, and research experiences, students learn to design, analyze, and optimize complex systems that power modern society.
+	<br>
+
+	<b>Core Areas of Study:</b>
+	<br>
+	Circuits and Systems: Explore the behavior of electronic circuits and integrated systems, essential for building hardware components and devices.
+	<br>
+	Digital Signal Processing: Learn to analyze and manipulate digital signals for applications such as audio processing, image processing, and telecommunications.
+	<br>
+	Computer Architecture: Study the design and organization of computer systems, including microprocessors, memory systems, and input/output devices.
+	<br>
+	Embedded Systems: Gain expertise in designing and programming embedded systems for applications ranging from consumer electronics to industrial automation.
+	<br>
+	Communications Engineering: Understand the principles of data transmission and reception, including wireless communication systems and network protocols.
+	<br>
+	Control Systems: Learn to design and implement feedback control systems for regulating and optimizing dynamic processes.
+	<br>
+	<b>Career Opportunities:</b><br>
+	With a degree in Electrical and Computer Engineering, graduates are well-positioned for diverse career paths in industries such as:
+	<br>
+	1.Semiconductor and microelectronics<br>
+	2.Telecommunications and networking<br>
+	3.Information technology and software development<br>
+	4.Aerospace and defense<br>
+	5.Automotive and transportation<br>
+	6.Consumer electronics and IoT (Internet of Things)<br>
+	7.Robotics and automation<br>
+	8.Biomedical engineering<br>
+</p>
+<p id="it" >
+<b>Introduction:</b><br>
+Information Technology (IT) is a dynamic and rapidly evolving field that drives innovation and transformation in today's digital age. From developing software applications to managing complex networks, IT professionals play a crucial role in shaping the way we communicate, work, and live.
+<br>
+<b>What You'll Learn:</b><br>
+In our Information Technology program, students gain a comprehensive understanding of computer systems, software development, networking, and cybersecurity. Through a blend of theoretical coursework, hands-on projects, and experiential learning opportunities, students acquire the skills and knowledge needed to succeed in the fast-paced world of IT.
+<br>
+<b>Core Areas of Study:</b><br>
+
+Software Development: Learn programming languages, software design principles, and development methodologies to create innovative software solutions.
+<br>
+Networking and Cybersecurity: Understand the principles of computer networks, protocols, and security measures to protect data and systems from cyber threats.
+<br>
+Database Management: Gain expertise in designing, implementing, and managing databases to store and retrieve information efficiently.
+<br>
+Web Development: Learn to design and develop dynamic websites and web applications using HTML, CSS, JavaScript, and other web technologies.
+<br>
+Cloud Computing: Explore the principles and technologies behind cloud computing platforms and services, enabling scalable and flexible IT solutions.
+<br>
+Data Analytics: Utilize data analysis techniques and tools to extract insights from large datasets and support data-driven decision-making.
+<br>
+<b>Career Opportunities:</b><br>
+With a degree in Information Technology, graduates are well-positioned for diverse career paths in industries such as:
+<br>
+1.Software development and engineering<br>
+2.Network administration and cybersecurity<br>
+3.Database administration and management<br>
+4.Web development and e-commerce<br>
+5.Cloud computing and virtualization<br>
+6.Data analysis and business intelligence<br>
+7.IT consulting and project management<br>
+8.Digital forensics and cyber investigations<br>
+</p>
+<p id="cse" >
+	<b>Introduction:</b><br>
+	Welcome to the Computer Science and Engineering (CSE) departmen.CSE is at the forefront of revolutionizing the digital landscape, driving technological advancements that shape industries and transform societies. With a focus on problem-solving, creativity, and collaboration, our program prepares students to become leaders in the dynamic field of computer science and engineering.
+	<br>
+	<b>What You'll Learn:</b><br>
+	In our CSE program, students embark on a journey of discovery, exploring a wide range of topics that form the foundation of modern computing. From mastering programming languages to delving into artificial intelligence and machine learning, students develop the skills and knowledge needed to thrive in an ever-evolving technological landscape.
+	<br>
+	<b>Core Areas of Study:</b><br>
+	
+	Algorithms and Data Structures: Dive into the fundamentals of algorithm design and data organization, laying the groundwork for efficient problem-solving.
+	<br>
+	Software Engineering: Learn the principles of software design, development methodologies, and best practices for building robust and scalable software systems.
+	<br>
+	Artificial Intelligence and Machine Learning: Explore the frontiers of AI and ML, discovering how to create intelligent systems that can learn from data and adapt to new situations.
+	<br>
+	Computer Networks and Security: Gain insights into the architecture and protocols of computer networks, as well as strategies for securing information systems from cyber threats.
+	<br>
+	Human-Computer Interaction: Understand the principles of designing intuitive and user-friendly interfaces, ensuring that technology enhances the human experience.
+	<br>
+	Cloud Computing and Big Data: Delve into the world of cloud computing and big data technologies, learning how to harness vast amounts of data for insights and innovation.
+	<br>
+	<b>Career Opportunities:</b><br>
+	A degree in Computer Science and Engineering opens doors to a myriad of exciting career opportunities, including:
+	<br>
+	1.Software development and engineering<br>
+	2.Data science and analytics<br>
+	3.Cybersecurity and information assurance<br>
+	4.Artificial intelligence and machine learning research<br>
+	5.Web and mobile application development<br>
+	6.Cloud computing and distributed systems<br>
+	7.Game development and virtual reality<br>
+	8.Technology consulting and entrepreneurship<br>
+</p>
+<p id="ener" >
+<b>Introduction:</b><br>
+Welcome to the Energy Engineering department.Energy Engineering is a dynamic field focused on developing sustainable solutions to meet the world's growing energy needs while minimizing environmental impact. At our department, we're committed to educating the next generation of engineers who will lead the transition to a cleaner and more sustainable energy future.
+<br>
+<b>What You'll Learn:</b><br>
+In our Energy Engineering program, students gain a comprehensive understanding of energy systems, renewable technologies, and energy policy. Through hands-on projects, interdisciplinary coursework, and research opportunities, students develop the skills and knowledge needed to address complex energy challenges facing society today.
+<br>
+<b>Core Areas of Study:</b><br>
+
+Renewable Energy Technologies: Explore a variety of renewable energy sources, including solar, wind, hydroelectric, and biomass, and learn how to design and optimize systems for energy generation.
+<br>
+Energy Conversion and Storage: Study the principles of energy conversion and storage technologies, such as batteries, fuel cells, and capacitors, essential for integrating renewable energy into the grid.
+<br>
+Energy Efficiency and Conservation: Discover strategies for improving energy efficiency in buildings, transportation, and industrial processes, reducing energy consumption and greenhouse gas emissions.
+<br>
+Power Systems Analysis: Learn to analyze and optimize power systems, including transmission and distribution networks, to ensure reliable and resilient energy supply.
+<br>
+Sustainable Development and Policy: Explore the economic, social, and environmental implications of energy systems and policies, and evaluate strategies for achieving sustainability goals.
+<br>
+Energy Management and Economics: Gain insights into energy markets, project finance, and risk assessment, essential for planning and implementing energy projects.
+<br>
+<b>Career Opportunities:</b><br>
+A degree in Energy Engineering opens doors to a wide range of career opportunities, including:
+
+1.Renewable energy development and project management <br>
+2.Energy consulting and policy analysis<br>
+3.Energy efficiency engineering and auditing<br>
+4.Power system planning and operation<br>
+5.Sustainable building design and construction<br>
+6.Environmental consulting and regulatory compliance<br>
+7.Energy research and academia<br>
+</p>
+<p id="mecivil" >
+	<b>Introduction:</b><br>
+	Welcome to the Civil Engineering department.Civil Engineering is a dynamic field that plays a crucial role in designing, constructing, and maintaining the built environment. At our department, we're dedicated to educating future engineers who will shape the world through sustainable and resilient infrastructure solutions.
+	<br>
+	<b>What You'll Learn:</b><br>
+	In our Civil Engineering program, students gain a comprehensive understanding of structural engineering, transportation systems, environmental engineering, and construction management. Through hands-on projects, fieldwork, and interdisciplinary coursework, students develop the skills and knowledge needed to tackle the complex challenges facing the civil engineering profession.
+	<br>
+	<b>Core Areas of Study:</b><br>
+	
+	Structural Engineering: Explore the principles of structural analysis and design, learning to create safe and efficient structures such as buildings, bridges, and dams.
+	<br>
+	Transportation Engineering: Study the planning, design, and operation of transportation systems, including highways, railways, airports, and urban transit systems.
+	<br>
+	Environmental Engineering: Learn about water and wastewater treatment, air pollution control, solid waste management, and sustainable infrastructure practices to protect public health and the environment.
+	<br>
+	Geotechnical Engineering: Understand the behavior of soils and rocks, and learn to design foundations, retaining structures, and earthworks for infrastructure projects.
+	<br>
+	Construction Engineering and Management: Gain insights into project planning, scheduling, cost estimation, and construction methods, essential for delivering projects on time and within budget.
+	<br>
+	Sustainable Infrastructure: Explore innovative approaches to sustainable design and construction, including green building technologies, renewable energy integration, and resilient infrastructure planning.
+	<br>
+	<b>Career Opportunities:</b><br>
+	A degree in Civil Engineering opens doors to a wide range of career opportunities, including:
+	<br>
+	1.Structural engineering and design<br>
+	2.Transportation planning and engineering<br>
+	3.Environmental consulting and remediation<br>
+	4.Construction management and project engineering<br>
+	5.Geotechnical engineering and foundation design<br>
+	6.Urban planning and development<br>
+	7.Water resources engineering and management<br>
+	8.Sustainable infrastructure development<br>
+</p>
+<p id="mecse" >
+	<b>Introduction:</b><br>
+	Welcome to the Computer Science and Engineering (CSE) department.CSE is at the forefront of revolutionizing the digital landscape, driving technological advancements that shape industries and transform societies. With a focus on problem-solving, creativity, and collaboration, our program prepares students to become leaders in the dynamic field of computer science and engineering.
+	<br>
+	<b>What You'll Learn:</b><br>
+	In our CSE program, students embark on a journey of discovery, exploring a wide range of topics that form the foundation of modern computing. From mastering programming languages to delving into artificial intelligence and machine learning, students develop the skills and knowledge needed to thrive in an ever-evolving technological landscape.
+	<br>
+	<b>Core Areas of Study:</b><br>
+	
+	Algorithms and Data Structures: Dive into the fundamentals of algorithm design and data organization, laying the groundwork for efficient problem-solving.
+	<br>
+	Software Engineering: Learn the principles of software design, development methodologies, and best practices for building robust and scalable software systems.
+	<br>
+	Artificial Intelligence and Machine Learning: Explore the frontiers of AI and ML, discovering how to create intelligent systems that can learn from data and adapt to new situations.
+	<br>
+	Computer Networks and Security: Gain insights into the architecture and protocols of computer networks, as well as strategies for securing information systems from cyber threats.
+	<br>
+	Human-Computer Interaction: Understand the principles of designing intuitive and user-friendly interfaces, ensuring that technology enhances the human experience.
+	<br>
+	Cloud Computing and Big Data: Delve into the world of cloud computing and big data technologies, learning how to harness vast amounts of data for insights and innovation.
+	<br>
+	<b>Career Opportunities:</b><br>
+	A degree in Computer Science and Engineering opens doors to a myriad of exciting career opportunities, including:
+	<br>
+	1.Software development and engineering<br>
+	2.Data science and analytics<br>
+	3.Cybersecurity and information assurance<br>
+	4.Artificial intelligence and machine learning research<br>
+	5.Web and mobile application development<br>
+	6.Cloud computing and distributed systems<br>
+	7.Game development and virtual reality<br>
+	8.Technology consulting and entrepreneurship<br>
+</p>
+<p id="mba" >
+	<b>Introduction:</b><br>
+	Welcome to the Master of Business Administration.The MBA program is designed to empower aspiring business leaders with the knowledge, skills, and networks needed to excel in today's dynamic and competitive business environment. Whether you're looking to accelerate your career, start your own venture, or make a positive impact on society, our MBA program equips you with the tools to achieve your goals and lead with confidence.
+	<br>
+	<b>What You'll Learn:</b><br>
+	In our MBA program, students gain a comprehensive understanding of key business concepts, including finance, marketing, operations, strategy, and leadership. Through a blend of rigorous coursework, experiential learning opportunities, and industry connections, students develop the analytical, strategic, and interpersonal skills needed to thrive in diverse business settings.
+	<br>
+	<b>Core Areas of Study:</b><br>
+	
+	Finance: Explore financial analysis, investment strategies, and corporate finance, learning to make informed decisions that drive business growth and profitability.
+	<br>
+	Marketing: Master marketing principles, market research techniques, and branding strategies, enabling you to develop and execute effective marketing campaigns and drive customer engagement.
+	<br>
+	Operations Management: Learn to optimize business processes, manage supply chains, and enhance operational efficiency, ensuring that organizations deliver high-quality products and services.
+	<br>
+	Strategy and Leadership: Understand strategic management frameworks, leadership styles, and organizational behavior, empowering you to lead teams, drive change, and achieve strategic objectives.
+	<br>
+	Entrepreneurship and Innovation: Explore the entrepreneurial mindset, venture financing, and innovation management, preparing you to identify opportunities, navigate challenges, and build successful businesses.
+	<br>
+	Global Business: Gain insights into international business environments, cross-cultural management, and global market trends, equipping you to navigate the complexities of the global economy.
+	<br>
+	<b>Career Opportunities:</b><br>
+	An MBA degree opens doors to a wide range of career opportunities across industries, including:
+	<br>
+	1.Management consulting <br>
+	2.Investment banking and finance <br>
+	3.Marketing and brand management <br>
+	4.Operations and supply chain management <br>
+	5.Entrepreneurship and venture capital <br>
+	6.Corporate strategy and business development <br>
+	7.Nonprofit management and social entrepreneurship <br>
+	8.Healthcare administration and pharmaceutical management <br>
+</p>
+	</div>
+	</div>
+	<div class="container">
+	  <!-- <h2 id="header"></h2> -->
+		<div class="modal fade" id="Modal" role="dialog">
+		  <div class="modal-dialog" >
+		  <!-- Modal content--><div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 id="header" style="color:royalblue;text-align: center;"></h4>
+			  </div>
+			  <div class="modal-body">
+				<p id="textpart"></p>
+			  </div>
+			  <div class="modal-footer">
+				<button style="color:royalblue" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+			
+		  </div>
+		</div>
+		
+	  </div>
+</div>
+</body>
+<script>
+  var content=document.getElementById("mech");
+  var tar=document.getElementById("textpart");
+  var heading=document.getElementById("header");
+  function show(event){
+   tar.innerHTML=content.innerHTML;
+   heading.innerHTML=event.target.parentElement.parentElement.children[0].innerText;
+
+  }
+  var civil=document.getElementById("civil");
+  function showcivil(event)
+  {
+   tar.innerHTML=civil.innerHTML;
+   heading.innerHTML=event.target.parentElement.parentElement.children[0].innerText;
+  }
+  var elect=document.getElementById("elect");
+  function showelec(event)
+  {
+   tar.innerHTML=elect.innerHTML;
+   heading.innerHTML=event.target.parentElement.parentElement.children[0].innerText;
+  }
+  var ece=document.getElementById("ece")
+  function showece(event)
+  {
+	tar.innerHTML=ece.innerHTML;
+   heading.innerHTML=event.target.parentElement.parentElement.children[0].innerText;
+  }
+  var it=document.getElementById("it");
+  function showit(event)
+  {
+	tar.innerHTML=it.innerHTML;
+   heading.innerHTML=event.target.parentElement.parentElement.children[0].innerText;
+  }
+   var cse=document.getElementById("cse");
+   function showcse(event)
+   {
+	tar.innerHTML=cse.innerHTML;
+   heading.innerHTML=event.target.parentElement.parentElement.children[0].innerText;
+   }
+   var ene=document.getElementById("ener");
+   function showee(event)
+   {
+	tar.innerHTML=ene.innerHTML;
+   heading.innerHTML=event.target.parentElement.parentElement.children[0].innerText;
+   }
+  var mecivil=document.getElementById("mecivil");
+  function showmecivil(event)
+  {
+	tar.innerHTML=mecivil.innerHTML;
+   heading.innerHTML=event.target.parentElement.parentElement.children[0].innerText;
+  }
+  var mecse=document.getElementById("mecse");
+  function showmecse(event)
+  {
+	tar.innerHTML=mecse.innerHTML;
+   heading.innerHTML=event.target.parentElement.parentElement.children[0].innerText;
+  }
+  var mba=document.getElementById("mba")
+  function showmba(event)
+  {
+	tar.innerHTML=mba.innerHTML;
+   heading.innerHTML=event.target.parentElement.parentElement.children[0].innerText;
+  }
+</script>
+</html>

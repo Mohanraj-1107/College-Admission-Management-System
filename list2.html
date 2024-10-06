@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Students</title>
+	<style >
+	@import url('https://fonts.googleapis.com/css?family=Numans');
+  html,body{
+  height: 100%;
+  width:100%;
+  font-family: 'Numans', sans-serif;
+  font-size: 15px;
+  }
+	table{
+		width: 100%;
+		border:2px solid royalblue;
+		border-top:none;
+		margin-top: 7%;
+	}
+	th,td{
+		text-align:center;
+		padding: 8px;
+		border-right: 2px solid royalblue;
+		border-top:2px solid royalblue
+	}
+	th{
+		background:white;
+		color:darkviolet;
+	}
+	td{
+		background:white;
+		border-collapse: collapse;
+	}
+	li{
+		text-align: center;
+		list-style-type: none;
+		
+	}
+	a{
+		color:royalblue;
+		text-decoration: none;
+		cursor: pointer;
+		font-size:20px;
+		border:2px solid royalblue;
+		padding-left:15px;
+		padding-right: 15px;
+		background-color: royalblue;
+		color:white;
+		border-radius: 5px;
+	}
+	.nav
+	{
+		height:50px;
+		background-color: royalblue;
+		color:white;
+		text-align: center;
+		padding:7px;
+		padding-bottom: 10px;
+		width: 100%;
+		top:0;
+		left:0;
+		right:0;
+		position: fixed;
+	}
+</style>
+</head>
+<body >
+	<div class="nav">
+		<h3>STUDENT DETAILS</h3></h>
+	</div>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Father</th>
+			<th>Gender</th>
+			<th>DOB</th>
+			<th>Email</th>
+			<th>Mark</th>
+			<th>Cutoff</th>
+			<th>Phone No</th>
+			<th>Address</th>
+			<th>Course Type</th>
+			<th>Course Name</th>
+		</tr>
+		{%for row in rows%}
+		<tr>
+			<td>{{row['name']}}</td>
+			<td>{{row['father']}}</td>
+			<td>{{row['gender']}}</td>
+			<td>{{row['DOB']}}</td>
+			<td>{{row['email']}}</td>
+			<td>{{row['mark']}}</td>
+			<td>{{row['rank']}}</td>
+			<td>{{row['telephone']}}</td>
+			<td>{{row['address']}}</td>
+			<td>{{row['coursetype']}}</td>
+            <td>{{row['coursename']}}</td>
+		</tr>
+		{% endfor %}
+	</table>	
+	<br>
+	<br>
+	<li><a onclick="goback()">Back</a></li>
+</form>
+</body>
+<script>
+	function goback()
+	{
+		window.history.back();
+	}
+</script>
+</html>

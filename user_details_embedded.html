@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Numans');
+  html,body{
+  height: 100%;
+  font-family: 'Numans', sans-serif;
+  background-color:honeydew;
+  }
+  .nav{
+    width:100%;
+    background-color: royalblue;
+    text-align: center;
+    color:white;
+    padding:10px;
+  }
+  td{
+     padding: 10px;
+     padding-left: 100px;
+     padding-bottom:15px;
+  }
+  table{
+    margin-left: 28%;
+    margin-top: 2%;
+    border: 2px solid rgb(250, 225, 225);
+    padding:20px;
+    background-color: white;
+    border-radius: 15px;
+    padding-right: 30px;
+  }
+  .footer
+  {
+    height:30px;
+  }
+
+</style>
+<body>
+    <div class="nav">
+       <h4>DASHBOARD</h4>
+    </div>
+    <div>
+        <table>
+            <tr>
+        <td>Name</td><td>{{user_details[0]}}</td></tr>
+        <tr><td>Father Name </td> <td>{{user_details[1]}}</td></tr>
+        <tr><td>Gender</td><td>{{user_details[2]}}</td></tr>
+        <tr><td>DOB</td><td>{{user_details[3]}}</td></tr>
+        <tr><td>Email</td><td>{{user_details[4]}}</td></tr>
+        <tr><td>Mark</td><td>{{user_details[5]}}</td></tr>
+        <tr><td>Cutoff</td><td>{{user_details[6]}}</td></tr>
+        <tr><td>Mobile No</td><td>{{user_details[7]}}</td></tr>
+        <tr><td>Address</td><td>{{user_details[8]}}</td></tr>
+        <tr><td>Course type</td><td>{{user_details[9]}}</td></tr>
+        <tr><td>Cousre name</td><td>{{user_details[10]}}</td></tr>
+
+        
+        
+
+       </table> 
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>
