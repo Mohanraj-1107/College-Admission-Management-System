@@ -1,1 +1,1 @@
-# College-Admission-Management-System
+# College-admission-management-system
